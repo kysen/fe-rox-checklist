@@ -1,0 +1,45 @@
+@media (max-width: 1100px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    .left-column {
+      background-color: $bg-white;
+
+      height: fit-content;
+      width: 100%;
+      font-size: 10px;
+      .side-bar-container {
+        .side-bar-top-bar {
+          justify-content: flex-start;
+          height: 80px;
+          .side-bar-title-wrapper {
+            .title-click-box {
+              width: 50%;
+            }
+          }
+        }
+        .sb-all-evening-wrapper {
+          margin-top: 80px;
+        }
+      }
+    }
+    .checklist-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      // font-size: 2em;
+
+      .evening-header {
+        font-size: 2.3em;
+      }
+      h3 {
+        font-size: 1.3em;
+      }
+      .list-item-wrapper {
+      }
+      .list-item-title {
+        font-size: 1.1em;
+      }
+    }
+  }
+}

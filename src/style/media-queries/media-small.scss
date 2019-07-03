@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+  .App {
+    .left-column {
+      position: relative;
+
+      // background-color: $roxberry-purple;
+      height: auto;
+      .side-bar-container {
+        height: auto;
+        .side-bar-top-bar {
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          border-radius: 0px;
+
+          width: 100%;
+          .auth-wrapper {
+            position: relative;
+            font-size: 2em;
+          }
+          .side-bar-title-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+          }
+        }
+        .sb-all-evening-wrapper {
+          position: relative;
+          margin: 0px;
+          width: 100%;
+          border-bottom-left-radius: 5px;
+        }
+      }
+    }
+
+    .checklist-container {
+      .checklist-header {
+      }
+      .evening-wrapper {
+        .evening-header {
+        }
+        .on-open-wrapper {
+          .on-open-header {
+          }
+          .list-item-wrapper {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.left-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: $roxberry-purple;
+  height: 1000px;
+  width: 100%;
+  .side-bar-container {
+    color: $bg-white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .side-bar-top-bar {
+      display: flex;
+      align-items: center;
+      .auth-wrapper {
+        position: absolute;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        .who-signed-in {
+          font-size: 2em;
+        }
+        .form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .input {
+            height: 20px;
+            border-radius: 3px;
+            font-family: $roxberry-font;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            padding: 3px;
+            color: $roxberry-purple;
+            &:focus {
+              outline: none;
+            }
+            outline-color: none;
+          }
+          .sign-in-alt {
+            margin-left: 10px;
+            font-size: 1.5em;
+            padding: 7px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              color: white;
+              background-color: $hover-purple;
+            }
+          }
+        }
+      }
+
+      .side-bar-title-wrapper {
+        width: 100%;
+        margin: 20px;
+
+        .title-click-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          .side-bar-title {
+            font-size: 5em;
+          }
+          &:hover {
+            .chevron-wrapper {
+              background-color: $hover-purple;
+            }
+          }
+          &:active {
+            transition: 0.5s ease-in-out;
+            .chevron-wrapper {
+              align-self: flex-end;
+            }
+          }
+          .chevron-wrapper {
+            height: 40px;
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-left: 20px;
+            transition: 0.3s ease-in-out;
+            .chevron {
+              font-size: 2em;
+              // height: 30px;
+              // width: 30px;
+            }
+          }
+        }
+      }
+    }
+    .sb-all-evening-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .sb-evening-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0.2s ease-in-out;
+        .sb-evening-header {
+          cursor: pointer;
+          width: 100%;
+          padding: 15px 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3em;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            background-color: $hover-purple;
+          }
+
+          .evening-chev {
+            margin-right: 13px;
+            font-size: 0.6em;
+          }
+        }
+        .sb-on-open-wrapper {
+          display: flex;
+
+          font-size: 1em;
+          border-radius: 4px;
+          .sb-on-open-header {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $hover-purple;
+            }
+            .on-open-chevron {
+              width: 15px;
+              margin-right: 10px;
+            }
+            .sb-on-open-title {
+              font-size: 1.8em;
+            }
+            display: flex;
+          }
+        }
+        .active {
+          background-color: $hover-purple;
+          color: white;
+        }
+      }
+    }
+  }
+}
